@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Person from './components/personTemplate';
 
-function App() {
+const App = ()=> {
+  const name = 'Wanjugu'
+  const namesArray= ['Joshua','Nderi','Wanjugu', 'Sovereign','Hello']
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <h2>Hello from {name}</h2>
+     {
+      //write code here
+      namesArray.sort().map((name, pos)=>(
+      
+         <Person name={name} id={pos}/>
+
+      ))
+
+     }
     </div>
   );
 }

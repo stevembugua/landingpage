@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.name{
+   color: red;
+   border: 1px solid red;
+   padding: 2rem;
+   margin: 1rem 2rem;
+   text-align: left;
+   letter-spacing: .2em;
+}
